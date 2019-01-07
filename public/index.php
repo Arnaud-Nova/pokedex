@@ -7,20 +7,26 @@ include __DIR__ . '/../app/controllers/MainController.php';
 include __DIR__ . '/../app/controllers/ErrorController.php';
 include __DIR__ . '/../app/utils/DBdata.php';
 
+include __DIR__ . '/../app/models/CoreModel.php';
+include __DIR__ . '/../app/models/Pokemon.php';
+include __DIR__ . '/../app/models/PokemonType.php';
+include __DIR__ . '/../app/models/Type.php';
+
 $router = new AltoRouter();
 
 $router->setBasePath($_SERVER['BASE_URI']);
+// dump($_SERVER['BASE_URI']);
 
 // Création des routes
 $router->map('GET', '/', 'MainController#home', 'home');
 $router->map('GET', '/types', 'MainController#types', 'types');
-$router->map('GET', '/type/[i:id]', 'MainController#type', 'type');
-$router->map('GET', '/pokemon/[i:id]', 'MainController#pokemon', 'pokemon');
+$router->map('GET', '/type[i:id]', 'MainController#type', 'type');
+$router->map('GET', '/pokemon[i:id]', 'MainController#pokemon', 'pokemon');
 
 
 $match = $router->match();
 
-dump($match);
+// dump($match);
 
 // Vérification que la route existe et application sinon Err404
 if ($match === false) {

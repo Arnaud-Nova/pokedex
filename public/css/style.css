@@ -80,3 +80,180 @@ main {
     width: 90%;
     margin: auto;
 }
+
+/*
+Page des types de Pokémon
+*/
+
+.main-p {
+    color: #f5cecd;
+    margin: 1.5%;
+}
+
+.types-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.5%
+}
+
+.type-item {
+    width: calc(95.5% / 4);
+    padding: 1em 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-bottom: 0.5em;
+}
+
+.type-item a {
+    color: #f5cecd;
+}
+
+.caaaabb {
+    background-color: #aaaabb;
+}
+
+.cbb5544 {
+    background-color: #bb5544;
+}
+.c7766ee {
+    background-color: #7766ee;
+}
+.c3399ff {
+    background-color: #3399ff;
+}
+
+.cffbb33 {
+    background-color: #ffbb33;
+}
+
+.cff4422 {
+    background-color: #ff4422;
+}
+
+.c77ddff {
+    background-color: #77ddff;
+}
+
+.caabb22 {
+    background-color: #aabb22;
+}
+
+.cbbaabb {
+    background-color: #bbaabb;
+}
+
+.c77cc55 {
+    background-color: #77cc55;
+}
+
+.caa5599 {
+    background-color: #aa5599;
+}
+
+.cff5599 {
+    background-color: #ff5599;
+}
+
+.cbbaa66 {
+    background-color: #bbaa66;
+}
+
+.cddbb55 {
+    background-color: #ddbb55;
+}
+
+.c6666bb {
+    background-color: #6666bb;
+}
+
+.c665544 {
+    background-color: #665544;
+}
+
+.c6699ff {
+    background-color: #6699ff;
+}
+
+/*
+Page des détails
+*/
+
+.details {
+    color: #f5cecd;
+}
+
+.details a {
+    color: #f5cecd;
+    display: block;
+    text-align: center;
+    margin-left: 1.5%;
+    padding-left: 1.5%;
+}
+
+.details-main {
+    display: flex;
+}
+
+.details h2 {
+    text-align: center;
+}
+
+.details-main-img {
+    width: 30%;
+    margin: auto;
+    margin-left: 1.5%;
+}
+
+.details-main-stats {
+    width: 65%;
+    margin-left: 2em;
+    background-color: #ab3838;
+    border-radius: 10px;
+    padding: 1%;
+    margin-right: 1.5%;
+}
+
+.powers {
+    display: flex;
+}
+
+.stats {
+    display: flex;
+    margin-bottom: 0.3em;
+}
+
+.stat-bar {
+    width: 50%;
+    background-color: #632b2b;
+    border-radius: 5px;
+}
+
+.stat-bar-value {
+    background-color: #ffffff;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.stat {
+    width: 35%;
+}
+
+.stat-value {
+    width: 10%;
+}
+
+.detail-powers {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+#back {
+    margin: 2em;
+}

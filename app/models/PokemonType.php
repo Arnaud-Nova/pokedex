@@ -1,45 +1,45 @@
 <?php
 
 class PokemonType extends CoreModel {
-    private $pokemonNumero;
-    private $typeId;
+    private $pokemon_numero;
+    private $type_id;
 
     /**
-     * Get the value of pokemonNumero
+     * Get the value of pokemon_numero
      */ 
-    public function getPokemonNumero()
+    public function getPokemon_numero()
     {
-        return $this->pokemonNumero;
+        return $this->pokemon_numero;
     }
 
     /**
-     * Set the value of pokemonNumero
+     * Set the value of pokemon_numero
      *
      * @return  self
      */ 
-    public function setPokemonNumero($pokemonNumero)
+    public function setPokemon_numero($pokemon_numero)
     {
-        $this->pokemonNumero = $pokemonNumero;
+        $this->pokemon_numero = $pokemon_numero;
 
         return $this;
     }
 
     /**
-     * Get the value of typeId
+     * Get the value of type_id
      */ 
-    public function getTypeId()
+    public function getType_id()
     {
-        return $this->typeId;
+        return $this->type_id;
     }
 
     /**
-     * Set the value of typeId
+     * Set the value of type_id
      *
      * @return  self
      */ 
-    public function setTypeId($typeId)
+    public function setType_id($type_id)
     {
-        $this->typeId = $typeId;
+        $this->type_id = $type_id;
 
         return $this;
     }

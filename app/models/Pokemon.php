@@ -1,34 +1,16 @@
 <?php
 
 class Pokemon extends CoreModel {
-    private $name;
+    private $nom;
     private $pv;
     private $attaque;
     private $defense;
-    private $attaqueSpe;
-    private $defenseSpe;
+    private $attaque_spe;
+    private $defense_spe;
     private $vitesse;
     private $numero;
 
-    /**
-     * Get the value of name
-     */ 
-    public function getName()
-    {
-        return $this->name;
-    }
 
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */ 
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
 
     /**
      * Get the value of pv
@@ -90,46 +72,7 @@ class Pokemon extends CoreModel {
         return $this;
     }
 
-    /**
-     * Get the value of attaqueSpe
-     */ 
-    public function getAttaqueSpe()
-    {
-        return $this->attaqueSpe;
-    }
-
-    /**
-     * Set the value of attaqueSpe
-     *
-     * @return  self
-     */ 
-    public function setAttaqueSpe($attaqueSpe)
-    {
-        $this->attaqueSpe = $attaqueSpe;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of defenseSpe
-     */ 
-    public function getDefenseSpe()
-    {
-        return $this->defenseSpe;
-    }
-
-    /**
-     * Set the value of defenseSpe
-     *
-     * @return  self
-     */ 
-    public function setDefenseSpe($defenseSpe)
-    {
-        $this->defenseSpe = $defenseSpe;
-
-        return $this;
-    }
-
+    
     /**
      * Get the value of vitesse
      */ 
@@ -166,6 +109,66 @@ class Pokemon extends CoreModel {
     public function setNumero($numero)
     {
         $this->numero = $numero;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of attaque_spe
+     */ 
+    public function getAttaque_spe()
+    {
+        return $this->attaque_spe;
+    }
+
+    /**
+     * Set the value of attaque_spe
+     *
+     * @return  self
+     */ 
+    public function setAttaque_spe($attaque_spe)
+    {
+        $this->attaque_spe = $attaque_spe;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of defense_spe
+     */ 
+    public function getDefense_spe()
+    {
+        return $this->defense_spe;
+    }
+
+    /**
+     * Set the value of defense_spe
+     *
+     * @return  self
+     */ 
+    public function setDefense_spe($defense_spe)
+    {
+        $this->defense_spe = $defense_spe;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of nom
+     */ 
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set the value of nom
+     *
+     * @return  self
+     */ 
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
 
         return $this;
     }

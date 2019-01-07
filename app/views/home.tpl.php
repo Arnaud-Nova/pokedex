@@ -1,11 +1,14 @@
+<?php
+$pokemonsList = $viewVars['pokemonsList'];
+?>
     <main>
-        <div class="main-img"><img src="img/1.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/2.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/3.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/4.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/5.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/6.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/7.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
-        <div class="main-img"><img src="img/8.png" alt="Nom du pokémon"><a href=""># Nom</a></div>
+
+        <?php 
+        foreach ($pokemonsList as $pokemon) : ?>
+        <div class="main-img"><img src="img/<?= $pokemon->getNumero() ?>.png" alt="<?= $pokemon->getNom() ?>"><a href="./pokemon<?= $pokemon->getId() ?>"><?php echo '#' . $pokemon->getNumero() . ' ' . $pokemon->getNom() ?></a></div>
+        <?php
+        endforeach;
+        ?>
+        
 
     </main>
