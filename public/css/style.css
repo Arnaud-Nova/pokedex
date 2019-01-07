@@ -1,0 +1,82 @@
+/*
+fond global #c14040
+fond nav #efe3e3
+police nav #c14040
+fond item #982c2c
+police item #f5d3d3
+fond barre caractéristiques #ffffff
+
+retour home #f5cecd
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+    background-color: #c14040;
+    font-family: 'Bree Serif', serif;
+}
+
+a {
+    text-decoration: unset; 
+}
+
+/*
+Header
+*/
+.header-container {
+    background-color: #efe3e3;
+    color: #c14040;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    margin: 1.5%;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+    padding: 0 0.5em;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 0 1em;
+}
+
+.nav-list a {
+    color: #c14040;
+}
+
+/*
+Main
+*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-img {
+    display: flex;
+    flex-direction: column;
+    background-color: #982c2c;
+    border-radius: 40px;
+    width: 28.333333%;
+    margin: 1.5%;
+    padding: 1%;
+}
+
+.main-img a {
+    text-align: center;
+    color: #f5cecd;
+}
+
+.main-img img {
+    width: 90%;
+    margin: auto;
+}

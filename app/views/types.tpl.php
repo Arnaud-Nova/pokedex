@@ -1,0 +1,1 @@
+<p>page de choix du type</p>

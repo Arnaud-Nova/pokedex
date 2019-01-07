@@ -1,0 +1,1 @@
+<p>page détail</p>
